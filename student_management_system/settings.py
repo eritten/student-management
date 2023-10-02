@@ -26,8 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '12lkdfajdlfmkdvvlzdfldkfadlfasd;fk;sdkf;4' # Consider using your secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
 # ALLOWED_HOSTS = ['smswithdjango.herokuapp.com']
 ALLOWED_HOSTS = ['*']  # Not recommended but useful in dev mode
 
@@ -149,7 +148,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 AUTH_USER_MODEL = 'main_app.CustomUser'
 AUTHENTICATION_BACKENDS = ['main_app.EmailBackend.EmailBackend']
-TIME_ZONE = 'Africa/Lagos'
+TIME_ZONE = 'Africa/Accra'
 
 # EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 # EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_mails")
